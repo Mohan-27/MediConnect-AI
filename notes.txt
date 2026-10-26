@@ -1,0 +1,85 @@
+ai-services
+
+
+PS C:\Users\DELL\Desktop\MediConnect-AI> ./venv/Scripts/Activate
+(venv) PS C:\Users\DELL\Desktop\MediConnect-AI> cd ai-services
+(venv) PS C:\Users\DELL\Desktop\MediConnect-AI\ai-services> uvicorn app.main:app --reload --port 8000
+INFO:     Will watch for changes in these directories: ['C:\\Users\\DELL\\Desktop\\MediConnect-AI\\ai-services']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [21900] using StatReload
+INFO:     Started server process [5528]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50445 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50968 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50968 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+
+
+
+frontend
+PS C:\Users\DELL\Desktop\MediConnect-AI\frontend> npm run dev
+
+> frontend@0.0.0 dev
+> vite
+
+
+  VITE v8.3.3  ready in 1054 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+10:52:07 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css
+10:54:56 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css (x2)
+10:54:58 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css (x3)
+10:55:36 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css (x4)
+10:55:40 pm [vite] (client) hmr update /src/routes/AppRoutes.jsx, /src/index.css (x5)
+
+
+
+backend
+PS C:\Users\DELL\Desktop\MediConnect-AI> cd backend
+PS C:\Users\DELL\Desktop\MediConnect-AI\backend> npm run dev
+
+> mediconnect-ai-backend@1.0.0 dev
+> nodemon src/server.js
+
+[nodemon] 3.1.14
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,cjs,json
+[nodemon] starting `node src/server.js`
+◇ injected env (2) from .env
+MediConnect AI Backend running on http://localhost:5000
+GET / 200 8.463 ms - 92
+GET /favicon.ico 404 1.027 ms - 49
+GET / 304 9.676 ms - -
+
+
+
+
+patient 1
+-----------
+email--harikumar@gmail.com
+password--hari1234
+
+
+
+doctor 1
+-------------
+email--mohan@gmail.com
+password--mohan1234
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YWNhODA2NDIyMThmNzI2ODI1MTYwZjAiLCJyb2xlIjoiZG9jdG9yIiwiaWF0IjoxNzkxODczMzQyLCJleHAiOjE3OTI0NzgxNDJ9.zdsX70cC3admLp66F-udA-M9nDG9AIofW7PDLzylCS0
+
+
+doctor 2
+----------
+email--ammu@gmail.com
+password--ammu1234
+
+
+laboratory 1
+-------------
+manoj@gmail.com
+password--manoj1234
+
